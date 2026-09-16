@@ -1,0 +1,7 @@
+title: Copybara
+description: Privacy policy for the Copybara Chrome extension
+theme: minima
+url: https://lairdcreative.github.io
+baseurl: /copybara-privacy
+header_pages:
+  - privacy.md
