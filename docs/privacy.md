@@ -8,22 +8,24 @@ Last updated: 24 September 2026
 
 Copybara Clipboard Manager is a Chrome extension that saves text you copy and shows it in a sidebar with the page it came from.
 
-## What data we collect
+## What data Copybara stores
 
-Copybara stores the following on your device so the extension can work:
+Copybara stores the following locally on your device so the extension can provide clipboard history:
 
-- Text you copy, cut, or save with the right-click Save to Copybara command
-- The page URL and site name for that text
-- Tags and favorites you add to a saved item
-- Your sidebar preferences, such as color scheme, font size, and whether capture is paused
+- Text you intentionally copy, cut, or save using the “Save to Copybara” right-click command
+- The page URL and site name associated with that saved text
+- Tags and favorites you add to saved items
+- Sidebar preferences, such as color scheme, font size, and whether capture is paused
 
-Copybara may read clipboard contents after a copy or cut so that text can be saved.
+Copybara only saves page information when it is associated with text you intentionally copy, cut, or save. It does not record the websites you visit or maintain a separate browsing history.
 
-Copybara does not ask for your name, email, account, payment details, or location.
+Copybara may read clipboard contents immediately following a copy or cut action so the copied text can be saved.
+
+Copybara does not ask for or intentionally collect your name, email address, account credentials, payment information, or location.
 
 ## How data is stored
 
-All of this data is stored locally in Chrome using `chrome.storage.local`. It stays on your computer.
+All of this data is stored locally in Chrome using `chrome.storage.local`. It remains in your local Chrome profile and is not sent to Copybara or an external server.
 
 Copybara does not use `chrome.storage.sync`, cookies, analytics, or a Copybara server.
 
